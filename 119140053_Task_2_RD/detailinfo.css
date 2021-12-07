@@ -1,0 +1,104 @@
+*{
+    font-family: "Verdana", sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;   
+}
+
+body{
+    width: 100%;
+    height: 100%;  
+    overflow: hidden;    
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+.card {
+    padding: 60px 80px;  
+    background-color: white;        
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 8px 12px 0 #5c5c5c;
+}
+
+.card h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #535353;
+    font-weight: bold;
+}
+
+.formContent{
+    margin-bottom: 20px;
+}
+
+.formContent label{    
+    color: #474747;
+    font-size: 20px;    
+}
+
+.inputan input {
+    border-radius: 5px;
+    border: 2px solid #4e4e4e;
+    font-size: 16px;
+    width: 100%;
+}
+
+.inputan textarea {
+    border-radius: 5px;
+    border: 2px solid #4b4b4b;
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+}
+
+.reminder{
+    font-size:14px;
+    
+}
+
+.reminder p{
+    margin: 2px;
+}
+
+.button {
+    font-size: 16px;
+    display: flex;    
+    justify-content: space-between;  
+    margin-top: 20px;  
+}
+
+.back-button a{
+    text-decoration: none;
+    color: #5a5a5a;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #4b4b4b;
+    border-radius:5px;    
+}
+
+.back-button a:hover{
+    color: white;
+    background-color: #575757;
+}
+
+.done-button button{
+    text-decoration: none;
+    color: #585858;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #505050;
+    border-radius:5px;    
+}
+
+.done-button button:hover{
+    color: white;
+    background-color: #555555;
+}
+

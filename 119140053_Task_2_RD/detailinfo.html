@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="descriptions" content="Album Pre-Order">
+        <meta name="author" content="119140053">
+        <link rel="stylesheet" href="detailinfo.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <title>Album Pre-Order</title>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('name');
+            const albumversion = params.get('albumversion');
+            const address = params.get('address')
+            const email = params.get('email');         
+            
+            window.onload = function() {
+                document.getElementById("name").value = name;
+                document.getElementById("albumversion").value = albumversion;
+                document.getElementById("address").value = address;
+                document.getElementById("email").value = email;
+            };
+        </script>
+    </head>
+    <body>        
+        <div class="card">
+            <div class="header">
+                <h3 class="card-title">Your Album Pre-Order Information</h3>
+            </div>
+            <div class="card-body">
+                <form class="form-visitor">
+                    <div class="formContent">
+                        <label for="name">Name</label>
+                        <div class="inputan">
+                            <input type="text" name="name" id="name" class="form-control" value="name">
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="albumversion">Album Version</label>
+                        <div class="inputan">
+                            <input type="text" id="albumversion" class="form-control" value="albumversion">                     
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="address">Address</label>
+                        <div class="inputan">
+                            <textarea class="form-control" name="Address" id="address" value="address"></textarea>
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="email">E-Mail</label>
+                        <div class="inputan">
+                            <input type="email" name="email" id="email" class="form-control" value="email">
+                        </div>
+                    </div> 
+                </form>
+            </div>
+            <div class="button">
+                <div class="back-button">
+                    <a href="index.html">
+                        Back
+                    </a>
+                </div>
+                <div class="done-button">
+                    <button onclick="succ()">Done</button>
+                </div>                              
+            </div>
+        </div>
+        <script>
+            function succ() {
+                alert("Album Pre-Order Succeed");
+            }
+        </script>
+    </body>
+</html>
